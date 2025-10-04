@@ -1,0 +1,77 @@
+## Build artifacts
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Bb]uild[Ll]og.*
+
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+.vscode/
+.idea/
+
+## NuGet packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+# If using the old MSBuild-Integrated Package Restore:
+.nuget/
+
+## Backup & temp files
+*.bak
+*.tmp
+*.temp
+*.log
+*.svclog
+*.pidb
+*.userprefs
+*.dbmdl
+*.dbproj.schemaview
+*.pfx
+*.publishsettings
+
+## Test results
+TestResults/
+*.VisualState.xml
+*.coverage
+*.coveragexml
+
+## Rider
+.idea/
+*.sln.iml
+
+## ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+## Windows
+Thumbs.db
+Desktop.ini
+
+## Mac
+.DS_Store
+
+## T4 code generation
+*.Generated.cs
+
+## Entity Framework
+Migrations/
+
+## Publish outputs
+publish/
+out/
+wwwroot/dist/
