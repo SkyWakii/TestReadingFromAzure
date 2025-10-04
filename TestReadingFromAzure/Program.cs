@@ -14,8 +14,8 @@ class Program
         var connectionString = "";
         var tableClient = new TableClient(connectionString, tableName);
 
-        Console.WriteLine("Fetching last 10 rows...");
         var machine = Environment.MachineName;
+        Console.WriteLine($"Fetching last 10 rows for machine {machine}...");
 
         var query = tableClient.Query<TableEntity>(
             filter: $"PartitionKey eq '{machine}'"
